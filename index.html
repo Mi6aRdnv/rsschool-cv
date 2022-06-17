@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
 </head>
 <body>
+    <header class="header container">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#Skils" class="nav-link">Skils</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Example code</a></li>
+                <li class="nav-item"><a href="#English" class="nav-link">English lvl</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <main class="main container">
+
+        <section class="section" id="profile">
+            <h1 class="section-title name">Mikhail Rodionov</h1>
+            <div class="contacts">
+                <span class="contact-name">discord:</span> Mi6aRdnv#6356 <span class="contact-name">telegram:</span> @mi6aRdnv
+            </div>
+            <div class="about">
+                <p class="abaut-me">I live in Ukraina,and studying at European University as Software Engineer.</p>
+            </div>
+         
+        </section>
+        <section class="section" id="Skils">
+            <h2 class="section-title">Skils</h2>
+            <ul class="list">
+                <li class="list-item">HTML/CSS</li>
+                <li class="list-item">JS(basic)</li>
+                <li class="list-item">БЭМ</li>
+                <li class="list-item">SASS/SCSS</li>
+                <li class="list-item">Git/github</li>
+            </ul>
+         
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Example code</h2>
+            <p class="description">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
+            <div class="code">
+                <pre>
+let result = document.querySelector('.content__result');
+let x=0;
+let i=0;
+while(i < 1000 ){
+    if(!(i % 3) || !(i % 5)){
+        x = x + i;
+    }
+    i +=1
+}
+</pre>
+            </div>
+        </section>
+        <section class="section" id="English">
+            <h2 class="section-title">English lvl</h2>
+            <P>Elementary - can read add write using translatar.Had experience in business correspondence with foreigners (worked as a chat manager)</P>
+         
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="logo"><a href="https://rs.school/js/" class="logo_link rss"></a></div>
+        <p class="time">2022</p>
+    </footer>
     
 </body>
 </html>
