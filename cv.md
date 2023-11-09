@@ -11,6 +11,7 @@ My skill:
 1. HTML/CSS
 2. Javascript
 3. Figma(_and other graphic editors_)
+4. Git/Github
 
 #### Code Examples
 ```
@@ -30,3 +31,4 @@ function nthFibo(n) {
 ```
 
 My English is at A2 level, but I study it intensively
+![prove](./EF_SET_Certificate.jpg)
