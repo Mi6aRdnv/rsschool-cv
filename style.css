@@ -58,12 +58,15 @@ hr {
     width: 100%;
 	background-color: var(--main-white-color);
 }
-p {
+p, li {
 	margin-bottom: 3px;
 }
 a:hover {
 	margin-top: -3px;
 	color: #fff;
+}
+pre {
+	color: #00A538;
 }
 
 
@@ -157,4 +160,61 @@ a:hover {
 }
 .telegram-link::before {
 	background-image: url(img/telegram.svg);
+}
+
+/* ABOUT ME SECTION */
+#about-me {
+	background-color: var(--main-blue-color);
+} 
+.title-section {
+	flex-direction: column;
+	display: flex;
+	margin-bottom: 15px;
+	font-size: 1.15rem;
+}
+.title-section__title {
+	margin-bottom: 5px;
+	align-self: flex-end;
+}
+.content-box {
+	display: flex;
+}
+.content-box__left-block {
+	width: 60%;
+}
+.content-right-block {
+	width: 40%;
+}
+.subsection-block {
+	margin-bottom: 15px;
+}
+.subsection-block__title {
+	margin-bottom: 5px;
+	font-size: 1.05rem;
+}
+.uni-title {
+	font-weight: 600;
+	color: rgba(240, 240, 240, 0.8);
+	
+}
+.uni-info__title {
+	font-weight: 600;
+}
+
+.languages-list {
+}
+.languages-list__elm {
+	list-style: circle;
+}
+.certificate-link {
+	text-decoration: underline;
+}
+.skills-list {
+}
+.skills-list__elm {
+}
+
+.subsection-block--code {
+	background-color: black;
+	padding: 10px;
 }
