@@ -153,8 +153,8 @@ a:hover {
 	background-repeat: no-repeat;
 }
 .codewars-link::before {
-	background-image: url(/img/codewars.svg);
+	background-image: url(img/codewars.svg);
 }
 .telegram-link::before {
-	background-image: url(/img/telegram.svg);
+	background-image: url(img/telegram.svg);
 }
