@@ -17,7 +17,7 @@ html,body{
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
+	font-size: 16px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -32,3 +32,256 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+:root {
+	--main-red-color: #BE3144;
+	--main-white-color: #F0F0F0;
+	--main-blue-color: #45567D;
+	--main-gray-color: #303841;
+	--linear-gradient-black: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+._container {
+	max-width: 1360px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 15px 25px;
+}
+._flex-container {
+	display: flex;
+}
+
+body, a {
+	color: var(--main-white-color);
+}
+hr {
+	height: 2px;
+    width: 100%;
+	background-color: var(--main-white-color);
+}
+p, li {
+	margin-bottom: 3px;
+}
+a:hover {
+	margin-top: -3px;
+	color: #fff;
+}
+pre {
+	color: #00A538;
+}
+
+
+/* HEADER */
+.header {
+	position: relative;
+	height: 100vh;
+	background-color: black;
+	background-image: var(--linear-gradient-black);
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: var(--main-red-color);
+}
+.navbar-list {
+	display: flex;
+	justify-content: end;
+}
+.navbar-list__elm {
+	margin-left: 20px;
+}
+.navbar-list__link {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.welcome-section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.welcome-section__ava-box {
+	padding: 10px;
+}
+.welcome-section__ava {
+	width: 100%;
+	border: 1.5px solid var(--main-red-color);
+    border-radius: 100%;
+}
+.welcome-section__text-box {
+	margin-left: 20px;
+}
+.welcome-section__title {
+	margin-bottom: 10px;
+	font-size: 3rem;
+	font-weight: 600;
+}
+.welcome-section__subtitle {
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--main-red-color);
+}
+
+.socials-box {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+}
+.socials-list {
+	display: flex;
+}
+.socials-list__elm {
+	margin-left: 20px;
+}
+.socials-list__link {
+	display: inline-block;
+	font-size: 1.2rem;
+	text-wrap: nowrap;
+	position: relative;
+	padding-left: 25px;
+}
+.socials-list__link::before {
+	content: '';
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.codewars-link::before {
+	background-image: url(img/codewars.svg);
+}
+.telegram-link::before {
+	background-image: url(img/telegram.svg);
+}
+
+/* ABOUT ME SECTION */
+#about-me {
+	background-color: var(--main-blue-color);
+} 
+.title-section {
+	margin-top: 20px;
+	flex-direction: column;
+	display: flex;
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+}
+.title-section__title {
+	margin-bottom: 5px;
+	align-self: flex-end;
+}
+.content-box {
+	display: flex;
+}
+.content-box__left-block {
+	width: 60%;
+}
+.content-box__right-block {
+	width: 40%;
+}
+.subsection-block {
+	margin-bottom: 15px;
+}
+.subsection-block__title {
+	margin-bottom: 5px;
+	font-size: 1.15rem;
+}
+.uni-title {
+	font-weight: 600;
+	color: rgba(240, 240, 240, 0.8);
+	
+}
+.uni-info__title {
+	font-weight: 600;
+}
+
+.languages-list {
+}
+.languages-list__elm {
+	list-style: circle;
+}
+.certificate-link {
+	text-decoration: underline;
+}
+.skills-list {
+}
+.skills-list__elm {
+}
+
+.subsection-block--code {
+	background-color: black;
+	padding: 10px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+	background-color: var(--main-gray-color);
+}
+.projects-box {
+	display: flex;
+}
+.projects-box__column {
+	margin-left: auto;
+}
+.projects-box__project-tile {
+	padding: 10px;
+}
+.projects-box__project-tile:hover {
+	opacity: 0.8;
+}
+.projects-box__project-link {
+}
+.projects-box__project-img {
+	width: 100%;
+}
+
+/* FOOTER */
+#contacts {
+	background-color: var(--main-red-color);
+}
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-list__elm {
+}
+.footer-list__elm--rss {
+	width: 100px;
+}
+.footer-list__rss-link:hover {
+	opacity: 0.8;
+}
+.footer-list__rss-logo {
+	width: 100%;
+}
+.footer-link {
+}
+.github-link-elm {
+}
+.github-link {
+	display: inline-block;
+	font-size: 1.2rem;
+	text-wrap: nowrap;
+	position: relative;
+	padding-left: 25px;
+}
+.github-link::before {
+	content: '';
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(img/github.svg);
+}

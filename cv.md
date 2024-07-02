@@ -1,7 +1,7 @@
 > # Rodionov Misha
 
 ### Contacts
- [![Telegram](/telegram.svg)](https://t.me/mi6aRdnv)  [![Github](/github.svg)](https://github.com/Mi6aRdnv)  [![Codewars](/codewars.svg)](https://www.codewars.com/users/Mi6aRdnv) 
+ [![Telegram](img/telegram.svg)](https://t.me/mi6aRdnv)  [![Github](img/github.svg)](https://github.com/Mi6aRdnv)  [![Codewars](img/codewars.svg)](https://www.codewars.com/users/Mi6aRdnv) 
 
 ### About me
 > I have completed a degree in Software Engineering from the university. I have one year of experience working in IT as a PPC marketer, where I developed strong skills in teamwork, remote work, and familiarity with project management tools.

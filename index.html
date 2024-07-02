@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Rodionov Misha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header with a height equal to the viewport height -->
+    <header class="header">
+        <!-- fixed navbar -->
+        <nav class="navbar">
+            <div class="_container">
+                <ul class="navbar-list navbar__list">
+                    <li class="navbar-list__elm"><a href="#about-me" class="navbar-list__link">ABOUT ME</a></li>
+                    <li class="navbar-list__elm"><a href="#projects" class="navbar-list__link">PROJECTS</a></li>
+                    <li class="navbar-list__elm"><a href="#contacts" class="navbar-list__link">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <div class="_container _flex-container">
+            <div class="welcome-section">
+                <div class="welcome-section__ava-box"><img class="welcome-section__ava" src="img/ava.png" alt="Rodionov Misha - photo"></div>
+                <div class="welcome-section__text-box">
+                    <h1 class="welcome-section__title">Hey I am Rodionov Misha</h1>
+                    <p class="welcome-section__subtitle">a web developer</p>
+                </div>
+            </div>
+
+            <div class="socials-box">
+                <ul class="socials-box__list socials-list">
+                    <li class="codewars-link-elm socials-list__elm"><a href="https://www.codewars.com/users/Mi6aRdnv" target="_blank" class="codewars-link socials-list__link">Codewars</a></li>
+                    <li class="telegram-link-elm socials-list__elm"><a href="https://t.me/mi6aRdnv" target="_blank" class="telegram-link socials-list__link">My Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-me">
+            <div class="_container">
+
+                <div class="title-section">
+                    <h2 class="title-section__title">ABOUT ME</h2>
+                    <hr>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-box__left-block">
+
+                        <div class="subsection-block">
+                            <p class="about-me__text">I have completed a degree in Software Engineering from the university. I have one year of experience working in IT as a PPC marketer, where I developed strong skills in teamwork, remote work, and familiarity with project management tools.</p>
+                        </div>
+
+                        <div class="subsection-block">
+                            <h3 class="subsection-block__title">EDUCATION:</h3>
+                            <h4 class="uni-title">Pyryatyn branch of the European University</h4>
+                            <p class="uni-info"><span class="uni-info__title">Degree:</span> Professional Junior Bachelor</p>
+                            <p class="uni-info"><span class="uni-info__title">Major:</span> 121 Software Engineering</p>
+                            <p class="uni-info"><span class="uni-info__title">Dates:</span> September 2021 - June 2024</p>
+                        </div>
+
+                        <div class="subsection-block">
+                            <h3 class="subsection-block__title">LANGUAGES:</h3>
+                            <ul class="languages-list">
+                                <li class="languages-list__elm">Russian - Native</li>
+                                <li class="languages-list__elm">English - B1 (<a href="https://cert.efset.org/7wUq2x" target="_blank" class="certificate-link">EF SET certificate</a>)</li>
+                                <li class="languages-list__elm">German - A1</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection-block">
+                            <h3 class="subsection-block__title">SKILLS:</h3>
+                            <ol class="skills-list">
+                                <li class="skills-list__elm">HTML/CSS</li>
+                                <li class="skills-list__elm">Javascript</li>
+                                <li class="skills-list__elm">Figma(and other graphic editors)</li>
+                                <li class="skills-list__elm">Git/Github</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="content-box__right-block">
+                        <div class="subsection-block subsection-block--code">
+                            <h3 class="subsection-block__title">Code example:</h3>
+                            <pre>
+function duplicateEncode(word){
+    let result = '';
+    word = word.toLowerCase().split('');
+    for(let i = 0; i &lt; word.length; i++){
+        for(let j = 0; j &lt; word.length; j++){
+            if(i != j){
+                if(word[i] == word[j]){
+                    result += ')'
+                    break
+                }
+            }
+        }
+        if(result.length == i + 1){
+            continue
+        }
+        result += '('
+    }
+    return result
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="_container">
+                <div class="title-section">
+                    <h2 class="title-section__title">SOME OF MY PROJECTS</h2>
+                    <hr>
+                </div>
+                <div class="projects-box">
+                    <div class="projects-box__column">
+                        <div class="projects-box__project-tile"><a class="projects-box__project-link" target="_blank" href="https://mi6ardnv.github.io/Melody-layout/"><img src="img/melody.png" alt="Website preview image" class="projects-box__project-img"></a></div>
+                        <div class="projects-box__project-tile"><a class="projects-box__project-link" target="_blank" href="https://mi6ardnv.github.io/Layout-template-Axit/dist/"><img src="img/axit.png" alt="Website preview image" class="projects-box__project-img"></a></div>
+                    </div>
+                    <div class="projects-box__column">
+                        <div class="projects-box__project-tile"><a class="projects-box__project-link" target="_blank" href="https://rolling-scopes-school.github.io/mi6ardnv-JSFE2023Q4/coffee-house/pages/home/"><img src="img/coffe-shop.png" alt="Website preview image" class="projects-box__project-img"></a></div>
+                        <div class="projects-box__project-tile"><a class="projects-box__project-link" target="_blank" href="https://rolling-scopes-school.github.io/mi6ardnv-JSFE2023Q4/hangman/"><img src="img/hangman.png" alt="Website preview image" class="projects-box__project-img"></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="_container">
+            <ul class="footer-list">
+                <li class="footer-list__elm footer-list__elm--rss"><a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" class="footer-list__rss-link"><img src="img/rs_school_js.svg" alt="Rs school logo" class="footer-list__rss-logo"></a></li>
+                <li class="footer-list__elm footer-link github-link-elm"><a href="https://github.com/Mi6aRdnv" target="_blank" class="github-link">My GitHub</a></li>
+                <li class="footer-list__elm"><p>CREATED <br> IN 2024</p></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
