@@ -242,3 +242,46 @@ pre {
 .projects-box__project-img {
 	width: 100%;
 }
+
+/* FOOTER */
+#contacts {
+	background-color: var(--main-red-color);
+}
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-list__elm {
+}
+.footer-list__elm--rss {
+	width: 100px;
+}
+.footer-list__rss-link:hover {
+	opacity: 0.8;
+}
+.footer-list__rss-logo {
+	width: 100%;
+}
+.footer-link {
+}
+.github-link-elm {
+}
+.github-link {
+	display: inline-block;
+	font-size: 1.2rem;
+	text-wrap: nowrap;
+	position: relative;
+	padding-left: 25px;
+}
+.github-link::before {
+	content: '';
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(img/github.svg);
+}
