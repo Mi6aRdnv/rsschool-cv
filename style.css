@@ -17,7 +17,7 @@ html,body{
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
+	font-size: 16px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -94,11 +94,12 @@ pre {
 	margin-left: 20px;
 }
 .navbar-list__link {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 600;
 }
 
 .welcome-section {
+	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -117,11 +118,11 @@ pre {
 }
 .welcome-section__title {
 	margin-bottom: 10px;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 600;
 }
 .welcome-section__subtitle {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 	color: var(--main-red-color);
 }
@@ -141,7 +142,7 @@ pre {
 .socials-list__link {
 	display: inline-block;
 	font-size: 1.2rem;
-	
+	text-wrap: nowrap;
 	position: relative;
 	padding-left: 25px;
 }
@@ -167,10 +168,11 @@ pre {
 	background-color: var(--main-blue-color);
 } 
 .title-section {
+	margin-top: 20px;
 	flex-direction: column;
 	display: flex;
 	margin-bottom: 15px;
-	font-size: 1.15rem;
+	font-size: 1.5rem;
 }
 .title-section__title {
 	margin-bottom: 5px;
@@ -182,7 +184,7 @@ pre {
 .content-box__left-block {
 	width: 60%;
 }
-.content-right-block {
+.content-box__right-block {
 	width: 40%;
 }
 .subsection-block {
@@ -190,7 +192,7 @@ pre {
 }
 .subsection-block__title {
 	margin-bottom: 5px;
-	font-size: 1.05rem;
+	font-size: 1.15rem;
 }
 .uni-title {
 	font-weight: 600;
@@ -217,4 +219,26 @@ pre {
 .subsection-block--code {
 	background-color: black;
 	padding: 10px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+	background-color: var(--main-gray-color);
+}
+.projects-box {
+	display: flex;
+}
+.projects-box__column {
+	margin-left: auto;
+}
+.projects-box__project-tile {
+	padding: 10px;
+}
+.projects-box__project-tile:hover {
+	opacity: 0.8;
+}
+.projects-box__project-link {
+}
+.projects-box__project-img {
+	width: 100%;
 }
